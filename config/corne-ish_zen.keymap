@@ -22,6 +22,11 @@
     quick-release;
 };
 
+// disable screen for testing
+&spi2 {
+	status = "disabled";
+};
+
 / {
   chosen {
     zmk,matrix_transform = &five_column_transform;
