@@ -25,6 +25,12 @@
     quick-release;
 };
 
+/ {
+  chosen {
+    zmk,matrix_transform = &five_column_transform;
+  };
+};
+
 #define COMBO(NAME, KEYPOS) \
     combo_##NAME { \
         timeout-ms = <100>; \
