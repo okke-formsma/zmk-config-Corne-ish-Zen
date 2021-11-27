@@ -5,8 +5,11 @@
 *
 */
 
-#include "corne-ish_zen.keymap"
+#include "corne.keymap"
 
+/*
+// not sure about this, probably not necessary for corne?
 &five_column_transform {
     col-offset = <6>;
 };
+*/
