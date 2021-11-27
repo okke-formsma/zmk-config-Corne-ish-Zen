@@ -1,3 +1,3 @@
-# Corne-ish Zen vertical combos keymap
+# Corne (and Besom) vertical combos keymap
 
 ![keymap](keymap.png)
