@@ -4,8 +4,7 @@
 
 #define DEF 0
 #define NAV 1
-#define I3  2
-#define SYS 3
+#define SYS 2
 
 &mt {
     flavor = "tap-preferred";
