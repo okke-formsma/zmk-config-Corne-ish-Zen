@@ -4,7 +4,7 @@
 # control, add individual board + shield combinations to
 # the `include` property, e.g:
 #
-board: [ "corne-ish_zen_left", "corne-ish_zen_right" ]
+board: [ "corneish_zen_v2_left", "corne-corneish_zen_v2_right" ]
 shield: [ "default" ]
 # include:
 #   - board: bdn9_rev2
