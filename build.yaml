@@ -1,7 +1,3 @@
 include:
   - board: corneish_zen_v2_left
   - board: corneish_zen_v2_right
-  # the reset firmware is non-board-specific, and won't build for
-  # corneish_zen_v2_left so use nice!nano board instead
-  - board: nice_nano_v2
-    shield: settings_reset
