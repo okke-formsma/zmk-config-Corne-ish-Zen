@@ -6,7 +6,3 @@
 */
 
 #include "corneish_zen_v2.keymap"
-
-&five_column_transform {
-    col-offset = <6>;
-};
