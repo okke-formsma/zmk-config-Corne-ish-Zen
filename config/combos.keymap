@@ -5,11 +5,11 @@
         bindings = <&kp NAME>; \
     };
 
-#define HOR_COMBO(NAME, KEYPOS) \
+#define HOR_COMBO(NAME, KEY, KEYPOS) \
     combo_##NAME { \
-        timeout-ms = <30;>; \
+        timeout-ms = <30>; \
         key-positions = <KEYPOS>; \
-        bindings = <&kp NAME>; \
+        bindings = <&kp KEY>; \
     };
 
 /*                KEY POSITIONS
@@ -47,15 +47,15 @@
         VERT_COMBO(SLASH, 19 29)
 
         // left hand horizontal combos
-        HOR_COMBO(TAB, 2 3)
-        HOR_COMBO(BSPC, 12 13)
-        HOR_COMBO(ENTER, 22 23)
-        HOR_COMBO(DEL, 11 12)
+        HOR_COMBO(TABL, TAB, 2 3)
+        HOR_COMBO(BSPCL, BSPC, 12 13)
+        HOR_COMBO(ENTERL, ENTER, 22 23)
+        HOR_COMBO(DELL, DEL, 11 12)
 
         // right hand horizontal combos
-        HOR_COMBO(TAB, 6 7)
-        HOR_COMBO(BSPC, 16 17)
-        HOR_COMBO(ENTER, 26 27)
-        HOR_COMBO(DEL, 15 16)
+        HOR_COMBO(TABR, TAB, 6 7)
+        HOR_COMBO(BSPCR, BSPC, 16 17)
+        HOR_COMBO(ENTERR, ENTER, 26 27)
+        HOR_COMBO(DELR, DEL, 15 16)
     };
 };
