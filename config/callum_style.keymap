@@ -16,14 +16,28 @@
 
 #include "combos.keymap"
 
+
+
+/ {
+  chosen {
+    zmk,matrix_transform = &five_column_transform;
+  };
+};
+
 /* Behavior Settings */
 &sk {
-  release-after-ms = <250>;
+  release-after-ms = <60000>; // "never"
   quick-release;
 };
 
 &sl {
-  release-after-ms = <250>;
+  release-after-ms = <60000>; // "never"
+};
+
+&lt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <125>;
+    quick-tap-ms = <100>;
 };
 
 / {
