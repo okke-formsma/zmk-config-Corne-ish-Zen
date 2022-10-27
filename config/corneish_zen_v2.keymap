@@ -6,6 +6,8 @@
 #define NAV 1
 #define SYS 2
 
+#include "combos.keymap"
+
 &mt {
     flavor = "tap-preferred";
     tapping-term-ms = <125>;
@@ -28,37 +30,7 @@
   };
 };
 
-#define COMBO(NAME, KEYPOS) \
-    combo_##NAME { \
-        timeout-ms = <100>; \
-        key-positions = <KEYPOS>; \
-        bindings = <&kp NAME>; \
-    };
-
 / {
-    combos {
-        compatible = "zmk,combos";
-        COMBO(NUM_1, 0 10)
-        COMBO(NUM_2, 1 11)
-        COMBO(NUM_3, 2 12)
-        COMBO(NUM_4, 3 13)
-        COMBO(NUM_5, 4 14)
-        COMBO(NUM_6, 5 15)
-        COMBO(NUM_7, 6 16)
-        COMBO(NUM_8, 7 17)
-        COMBO(NUM_9, 8 18)
-        COMBO(NUM_0, 9 19)
-
-        COMBO(ESC, 10 20)
-        COMBO(GRAVE, 11 21)
-        COMBO(MINUS, 12 22)
-        COMBO(EQUAL, 13 23)
-        COMBO(LEFT_BRACKET, 16 26)
-        COMBO(RIGHT_BRACKET, 17 27)
-        COMBO(BACKSLASH, 18 28)
-        COMBO(SCLN, 19 29)
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
