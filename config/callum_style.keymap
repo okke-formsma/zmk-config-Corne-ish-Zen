@@ -16,22 +16,10 @@
 
 #include "combos.keymap"
 
-
-
 / {
   chosen {
     zmk,matrix_transform = &five_column_transform;
   };
-};
-
-/* Behavior Settings */
-&sk {
-  release-after-ms = <60000>; // "never"
-  quick-release;
-};
-
-&sl {
-  release-after-ms = <60000>; // "never"
 };
 
 &lt {
@@ -88,10 +76,10 @@
         def_layer {
             label = "default";
             bindings = <
-    &kp Q  &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P   
-    &kp A  &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp QUOT
-    &kp Z &mt RGUI X &kp C &kp V &kp B &kp N &kp M &kp CMMA &mt RGUI DOT  &kp SCLN
-                &kp TAB &slnav &kp SPC         &sm LSHIFT &mo NUM_L &kp ESC
+&kp Q  &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P   
+&kp A  &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp QUOT
+&kp Z &mt RGUI X &kp C &kp V &kp B &kp N &kp M &kp CMMA &mt RGUI DOT  &kp SCLN
+            &kp TAB &slnav &kp SPC         &sm LSHIFT &mo NUM_L &kp ESC
             >;
         };
 
@@ -99,7 +87,7 @@
             label = "navi";
             bindings = <
 &none &none &none &none &none &kp HOME &kp PGDN &kp PGUP &kp END &none
-&none &none &none &none &none &kp LARW &kp DARW &kp UARW &kp RARW &none
+&sm LCTRL &sm LGUI &sm LALT &sm LSHFT &none &kp LARW &kp DARW &kp UARW &kp RARW &none
 &none &none &none &none &none &none &none &none &none &none
             &trans &trans &trans &trans &trans &trans
             >;
@@ -108,7 +96,7 @@
             label = "numbers";
             bindings = <
 &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3 &kp NUMBER_4 &kp NUMBER_5 &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9 &kp NUMBER_0
-&kp LCTRL &kp LGUI &kp LALT &kp LSHFT &kp F11 &kp F12 &kp RSHFT &kp RALT &kp LGUI &kp RCTRL
+&sm LCTRL &sm LGUI &sm LALT &sm LSHFT &kp F11 &kp F12 &sm RSHFT &sm RALT &sm LGUI &sm RCTRL
 &kp ESC &kp GRAVE &kp MINUS &kp EQUAL &none &none &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp BACKSLASH &kp SLASH
             &trans &trans &trans &trans &trans &trans
             >;
@@ -117,7 +105,7 @@
             label = "functions";
             bindings = <
 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
-&kp LCTRL &kp LGUI &kp LALT &kp LSHFT &kp F11 &kp F12 &kp RSHFT &kp RALT &kp LGUI &kp RCTRL
+&sm LCTRL &sm LGUI &sm LALT &sm LSHFT &kp F11 &kp F12 &sm RSHFT &sm RALT &sm LGUI &sm RCTRL
 &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none &none &none &none &none 
             &trans &trans &trans &trans &trans &trans
             >;
