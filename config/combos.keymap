@@ -44,7 +44,7 @@
         VERT_COMBO(LEFT_BRACKET, 16 26)
         VERT_COMBO(RIGHT_BRACKET, 17 27)
         VERT_COMBO(BACKSLASH, 18 28)
-        VERT_COMBO(SLASH, 19 29)
+        VERT_COMBO(SCLN, 19 29)
 
         // left hand horizontal combos
         HOR_COMBO(TABL, TAB, 2 3)
