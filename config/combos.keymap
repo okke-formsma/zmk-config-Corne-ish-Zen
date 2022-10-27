@@ -56,6 +56,13 @@
         HOR_COMBO(TABR, TAB, 6 7)
         HOR_COMBO(BSPCR, BSPC, 16 17)
         HOR_COMBO(ENTERR, ENTER, 26 27)
-        HOR_COMBO(DELR, DEL, 15 16)
+        HOR_COMBO(DELR, DEL, 17 18)
+
+        // both hands horizontal combos
+        combo_CAPS_WORD {
+            timeout-ms = <30>;
+            key-positions = <32 33>;
+            bindings = <&caps_word>;
+        };
     };
 };
